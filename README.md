@@ -13,21 +13,36 @@ BlumBot - это инструмент автоматизации для Telegram
 
 ### Установка
 
-1. **Клонируйте репозиторий:**
+1. **Установить Python:**
     ```bash
+    Скачайте и запустите Python 3.10
     https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe
-    
+
+    Поставьте галочку - Add Python 3.10 to PATH.
+
+    Выберите Customize Installation(это важно)
+    Отметьте/выберите: pip (остальные, оставьте по умолчанию)
+
+    Отметьте/выберите: Install for all users
+
+    Укажите путь C:\Python310
+
     ```
 
 
-1. **Клонируйте репозиторий:**
+2. **Клонируйте репозиторий:**
+
+   запускаем cmd
     ```bash
+    mkdir c:\bot
+    cd c:\bot
+    
     git clone https://github.com/vanitoo/blumbot.git
     cd blumbot
     
     ```
 
-2. **Запустите скрипт:**
+4. **Запустите скрипт:**
     Дважды щелкните по файлу `run.bat` если у вас Windows
 
 ### Конфигурация
