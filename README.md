@@ -39,6 +39,7 @@ BlumBot - это инструмент автоматизации для Telegram
     
     git clone https://github.com/vanitoo/blumbot.git
     cd blumbot
+
     
     ```
 
