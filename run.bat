@@ -1,4 +1,6 @@
 @echo off
+title Blum
+git pull
 
 if not exist venv (
     echo Creating virtual environment...
