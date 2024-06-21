@@ -62,7 +62,9 @@ async def start(thread: int, account: str, proxy: [str, None]):
                                 sleep_duration = end_time - timestamp
                                 logger.info(f"{account} | Sleep {format_duration(sleep_duration)}")
                                 max_try += 1
-                                await sleep(sleep_duration)
+                                #await sleep(sleep_duration)
+                                logger.info(f"{account} | Sleep, 14 min")								
+                                await sleep(840)
                                 await blum.refresh()
 
                             elif max_try == 0:
