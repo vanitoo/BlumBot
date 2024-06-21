@@ -13,6 +13,7 @@ if not exist venv\Lib\site-packages\installed (
     if exist requirements.txt (
         echo Installing dependencies...
         pip install -r requirements.txt
+        python.exe -m pip install --upgrade pip
         echo. > venv\Lib\site-packages\installed
     ) else (
         echo requirements.txt not found, skipping dependency installation.
