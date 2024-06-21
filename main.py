@@ -20,8 +20,11 @@ async def main():
         os.mkdir('statistics')
 
     if not action:
-        action = int(input("Select action:\n1. Run clicker\n2. Create sessions\n\n> "))
+        action = int(input("Select action:\n1. Run clicker\n2. Create sessions\n0. Exit\n \n> "))
 
+    if action == 0:
+        exit
+    
     if action == 2:
         await create_sessions()
 
