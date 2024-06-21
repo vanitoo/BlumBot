@@ -14,11 +14,13 @@ BlumBot - это инструмент автоматизации для Telegram
 ### Установка
 
 1. **Установить нужный софт:**
-    ```bash
+
     Скачайте и запустите GIT
     https://github.com/git-for-windows/git/releases/download/v2.45.2.windows.1/Git-2.45.2-64-bit.exe
-    установка по умолчанию, всегда далее
-
+   
+          
+       установка по умолчанию, всегда далее
+   
     Скачайте и запустите Python 3.10
     https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe
 
@@ -32,10 +34,9 @@ BlumBot - это инструмент автоматизации для Telegram
         3 экран.
           -Отметьте/выберите: Install Python 3.10 for all users
 
-    ```
 
 
-2. **Клонируйте репозиторий:**
+3. **Клонируйте репозиторий:**
 
    запускаем cmd
     ```bash
@@ -54,6 +55,7 @@ BlumBot - это инструмент автоматизации для Telegram
 ### Конфигурация
 
 Отредактируйте файл `data/config.py`, добавив ваши `API_ID` и `API_HASH`.
+
 API ID и API Hash создаем тут https://my.telegram.org/auth?to=apps
 
 ```python
