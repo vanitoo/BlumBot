@@ -2,7 +2,6 @@ from asyncio import sleep
 from random import uniform
 
 import aiohttp
-import random
 
 from aiocfscrape import CloudflareScraper
 from .agents import generate_random_user_agent
