@@ -2,6 +2,8 @@ from asyncio import sleep
 from random import uniform
 
 import aiohttp
+import random
+
 from aiocfscrape import CloudflareScraper
 from .agents import generate_random_user_agent
 
@@ -60,13 +62,13 @@ async def start(thread: int, account: str, proxy: [str, None]):
 
                             elif end_time is not None and timestamp is not None:
                                 sleep_duration = end_time - timestamp
-                                logger.info(f"{account} | Sleep {format_duration(sleep_duration)}")
+                                logger.info(f"{account} | Finish in - {format_duration(sleep_duration)}")
                                 max_try += 1
-                                #await sleep(sleep_duration)
-                                logger.info(f"{account} | Sleep, 14 min")								
-                                await sleep(840)
+                                sleep_duration = uniform(600, 1800)
+                                logger.info(f"{account} | Sleep - {format_duration(sleep_duration)}")
+                                await sleep(sleep_duration)
                                 await blum.refresh()
-
+                            
                             elif max_try == 0:
                                 break
 
