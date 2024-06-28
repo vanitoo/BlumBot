@@ -1,5 +1,5 @@
 @echo off
-title Blum
+title %cd%
 
 if not exist venv (
     echo Creating virtual environment...
