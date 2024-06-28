@@ -52,10 +52,10 @@ BlumBot - это инструмент автоматизации для Telegram
     mkdir c:\bot
     cd c:\bot
     
-    git clone https://github.com/vanitoo/blumbot.git
+    git clone https://github.com/vanitoo/BlumBot.git
     cd blumbot
 
-    run.cmd
+    START.cmd
     ```
     после 1 запуска, установится окружение и библиотеки, и в конце появится меню, нажать 0 и выйти
 
@@ -77,7 +77,7 @@ API_HASH = 'your_api_hash'
 ### Использование
 
 1. **Запустите скрипт:**
-    ```run.cmd```
+    ```START.cmd```
    
 2. **Выберите в меню действие 2:**
     - `2` Создать сессию Telegram
